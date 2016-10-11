@@ -23,19 +23,16 @@ export default class App extends Component {
   }
 
   render() {
-    console.log('getting called?');
     return (
       <div className="container">
-        <header>
-          <h1>Guest List</h1>
+        <h1>Guest List</h1>
 
-          <form className="new-guest" onSubmit={ this.submit.bind(this) } >
-            <input type="text" ref="firstName" placeholder="First Name" />
-            <input type="text" ref="lastName" placeholder="Last Name" />
-            <input type="text" ref="email" placeholder="Email Address" />
-            <button type="submit"> Submit </button>
-          </form>
-        </header>
+        <form className="new-guest" onSubmit={ this.submit.bind(this) } >
+          <input type="text" ref="firstName" placeholder="First Name" />
+          <input type="text" ref="lastName" placeholder="Last Name" />
+          <input type="text" ref="email" placeholder="Email Address" />
+          <button type="submit"> Submit </button>
+        </form>
 
         <ul>
           { this.props.guests ? this.props.guests.map( guest => {

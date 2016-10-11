@@ -5,13 +5,7 @@ export default class MainLayout extends Component {
   render() {
     return (
       <div>
-        <head>
-          <title>Corinne & Devon</title>
-        </head>
-
-        <body>
-          {this.props.content}
-        </body>
+        {this.props.content}
       </div>
     );
   }

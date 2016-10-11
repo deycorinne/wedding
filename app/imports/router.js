@@ -1,6 +1,8 @@
 import React from 'react';
 import MainLayout from './layout/main.js';
-import { FlowRouter } from 'meteor/kadira:flow-router';
+import { _ } from 'lodash';
+import { mount } from 'react-mounter';
+import { FlowRouter } from 'meteor/kadira:flow-router-ssr';
 
 class RouterClass {
   constructor() {

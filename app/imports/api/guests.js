@@ -37,3 +37,5 @@ const Guest = Class.create({
   },
   behaviors: {}
 });
+
+export { Guests, Guest };
