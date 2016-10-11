@@ -4,7 +4,6 @@ import { Guests } from './guests.js';
 Meteor.methods({
   insertGuest: function () {
     check( data, Object );
-
     var guest = new Guest( );
 
     guest.firstName = data.firstName;
